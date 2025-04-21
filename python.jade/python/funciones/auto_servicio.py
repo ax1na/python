@@ -1,31 +1,30 @@
 #jade rojas
 #21-4-25
 
-from tkinter import Menu
+def auto_servicio(opcion):
+    print("\n--- MENÚ ---")
+    print("1. 🍔 Hamburguesa")
+    print("2. 🍕 Pizza")
+    print("3. 🌭 Hot Dog")
+    print("4. 🍟 Papas fritas")
+    print("5. 🥤 Refresco")
+    print("-----------")
+    
+    if 1 <= opcion <= 5:
+        if opcion == 1:
+            print("\nHa seleccionado: 🍔 Hamburguesa")
+        elif opcion == 2:
+            print("\nHa seleccionado: 🍕 Pizza")
+        elif opcion == 3:
+            print("\nHa seleccionado: 🌭 Hot Dog")
+        elif opcion == 4:
+            print("\nHa seleccionado: 🍟 Papas fritas")
+        elif opcion == 5:
+            print("\nHa seleccionado: 🥤 Refresco")
+    else:
+        print("Error: Seleccione un número válido del menú")
 
+# Solicitar input fuera de la función
+opcion = int(input("Seleccione un número del menú: "))
+auto_servicio(opcion)
 
-def obtener_articulo(numero):
-    menu ={
-        1:"hamburgesa con queso",
-        2: "papas fritas",
- 3: "refresco",
-  4: "helado",
-  5:"galleta"
-}
-return menu.get(numero, "articulo no encontrado")
-
-def vienvenido():
-    print("Bienvenido a fastfood express")
-    print("1. @ hamburguesa con queso")
-    print("2. ;papas fritas")
-    print("3. / refresco")
-    print("4. * helado")
-    print("5.  - galleta")
-
-def main():
-    vienvenido()
-    numero = int(input("ingrese el numero del articulo que desea: "))
-try:
-    print("has pedido : ", obtener_articulo(numero))
-except:
-    print("entrada invalida")
