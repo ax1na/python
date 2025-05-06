@@ -4,4 +4,4 @@
 def sumar(a, b):
     return a + b
 sumar(2,3,4)
-print(suma(2,3,4)) 
+print(sumar(2,3,4)) 

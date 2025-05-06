@@ -10,4 +10,5 @@ def pedir_repetido():
             print("¡Gracias tu numero es:",numero)
         except ValueError:
            print("ese numero no es valido")
-pedir_repetido()
+           
+pedir_repetido() 
